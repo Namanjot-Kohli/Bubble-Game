@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Hit Game</title>
+</head>
+<link rel="stylesheet" href="bubblestyle.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+<body>
+    <div class="start-main">
+        
+        <video autoplay muted loop>
+            <source src="Generating_Moving_Bubble_Video.mp4">
+        </video>
+        <div id="start">
+            
+            <div class="name">BUBBLE HIT GAME</div>
+            <div class="rules">
+                <i class="fa-solid fa-pen-ruler" style="font-size: 40px;"></i>
+                <div class="rule-line">Can you defeat the challenge! You have 60 seconds! Hit the bubble with the same value as HIT to score 10 points.</div>
+            </div>
+            <div class="rules">
+                <i class="fa-solid fa-pen-ruler" style="font-size: 40px;"></i>
+                <div class="rule-line">Keep those fingers running till time runs out! Click Play to begin </div>
+                <i class="fa-solid fa-fire" style="color: orange; text-shadow: 1px 1px 5px  red;"></i>
+            </div>
+            <div class="play">
+                <div class="start-btn" onclick="startgame()">
+                    <div class="play-txt">PLAY</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        
+        
+        <div id="panel">
+            <div id="ptop">
+                <div class="ele">
+                    <h2>Hit</h2>
+                    <div id="valHit" class="box">5</div>
+                </div>
+                <div class="ele">
+                    <h2>Timer</h2>
+                    <div id="valTimer" class="box">60</div>
+                </div>
+                <div class="ele">
+                    <h2>Score</h2>
+                    <div id="valScore" class="box">0</div>
+                </div>
+            </div>
+            <div id="pbottom">
+            </div>
+        </div>
+    </div>    
+</body>
+<script src="bubblescript.js"></script>
+</html>
